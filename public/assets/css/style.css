@@ -1,0 +1,24 @@
+.join_presentation{
+    display: flex;
+    align-items: center;
+}
+
+.join_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.enrollment_form-title{
+    text-align: center;
+}
+.enrollment_form{
+    padding:10px;
+    margin: auto;
+    width: 70%
+}
+.btn{
+    background-color:#184E20;
+}
+

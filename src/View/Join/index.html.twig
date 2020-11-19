@@ -1,0 +1,32 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <div class="card join_presentation">
+        <div class="card-body join_card">
+            <h1 class="card-title join_presentation_title">Join us!</h1>
+            <p class="card-text">Help Vercingetorix and his fellows to Defeat Cesar's army! </p>
+        </div>
+    </div>
+    <div class="card join_presentation">
+        <div class="card-body join_card">
+            <h2 class="card-title join_presentation_title">Why would I do that?</h2>
+            <p class="card-text"> enroll in a battle and get food for your family!</p>
+             <p class ="card-text">1 battle = 100 menhir token, change your token for food and other nice items in our shop.
+            </p>
+        </div>
+    </div>
+
+        <h1 class="enrollment_form-title">Enroll Now!</h1>
+    <form action = "/Join/index" method="post" class="enrollment_form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="soldierName"  placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="password" name ="password" placeholder="Enter your assword">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Fight soldier!</button>
+    </form>
+     {% endblock %}
