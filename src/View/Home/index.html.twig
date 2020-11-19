@@ -1,5 +1,38 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-    <h1>Hello Wilder !</h1>
+<html>
+<head>
+    <title>Galix's Home Page</title>
+    <meta charset = "utf-8">
+    <link rel = "View/Home/layout.html.twig">
+</head>
+    <body>
+        <h1>HEADER</h1>
+        <div class="jumbotron text-center">
+            <div class="btn btn-secondary btn-lg">
+            <button type="button" class="btn btn-secondary btn-lg">JOIN US</button>
+            </div>
+            <div class = map>
+            <a href="/" >
+            <img src="https://i.pinimg.com/originals/25/69/b1/2569b183fe2f1af40de20e58f113ba00.png" alt="ancient map of Gallia" height="500px" width="450px">
+            </a>
+            </div>
+    </body>
+</html>
+
+{% endblock %}
+
+{% block javascript %}
+    <script>
+        var counter = 10;
+        var nextBattleCountdown = setInterval(function(){
+        console.log(counter);
+        counter--
+        if (counter === 0) {
+        console.log("HAPPY NEW WAR!!");
+        clearInterval(nextBattleCountdown);
+        }
+        }, 1000);
+    </script>
 {% endblock %}
